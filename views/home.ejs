@@ -1,0 +1,17 @@
+<%-  include("partials/header");  -%>
+<h1>Home</h1>
+
+<p> <%= para %></p>
+<% array.forEach(function(arr){ %>
+   <h1><%= arr.title%></h1>
+   <p>
+    <%= arr.content.substring(0,100) + "..." %>
+    <a href="/posts/<%= arr.title %>">Read More</a>
+    </p> 
+<% }) %>
+
+
+ 
+
+
+
